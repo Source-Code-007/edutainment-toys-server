@@ -111,7 +111,7 @@ async function run() {
         })
 
         //  update toy
-        app.post('/update-toy/:id', async (req, res) => {
+        app.put('/update-toy/:id', async (req, res) => {
             const uniqueId = req.params.id
             const updateToyInfo = req.body
             const { price, availableQuantity, description } = updateToyInfo
